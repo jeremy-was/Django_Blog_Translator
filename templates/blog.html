@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+        <div class="card m-3"> <!-- Card class (box around each blog post) with margin 3 -->
+        <div class="card-body">
+                <h2 class="card-title">
+                {{object.title}}
+                </h2>
+                <p class="card-text">
+                {{object.content}}
+                </p>
+                <p class="card-text">
+                Author: {{object.author | title}}
+                </p>
+        </div>
+        </div>
+{% endblock content %}
+    
